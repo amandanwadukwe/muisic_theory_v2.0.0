@@ -14,6 +14,7 @@ import About from "./pages/About";
 import MusicTheoryPiano from "./components/MusicTheoryPiano";
 import FeedBackButon from "./components/FeedbackButton";
 import Piano from "./resources/piano.svg";
+import commentImage from "./resources/comment.svg";
 
 // import Feedback from './components/Feedback';
 // import InstagramLoginComp from './components/InstagramLogin';
@@ -140,9 +141,22 @@ function App() {
           />
         </div>*/}
         <FeedBackButton />
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://www.instagram.com/muisictheory/"
+        >
+          <div className="comment-image-container pulse-effect">
+            <img
+              className="comment-image"
+              src={commentImage}
+              alt="click to comment"
+            />
+          </div>
+        </a>
       </div>
       <Footer />
-      <div style={{ height: "35vh" }}></div>
+      <div style={{ height: "15vh" }}></div>
     </div>
   );
 }
