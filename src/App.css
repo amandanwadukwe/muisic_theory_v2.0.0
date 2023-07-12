@@ -1,9 +1,14 @@
 
 .small-nav{
   display:block;
+  position: fixed;
+    top: 0vw;
+    left: 0vw;
 }
 .big-nav{
   display:none;
+  position: fixed;
+
 }
 .App {
   text-align: left;
@@ -129,7 +134,7 @@ header{
 }
 .banner{
   width:100vw;
-  height: 15vh;
+  height: 25vh;
   margin:0 auto;
   display:flex;
   flex-direction: column;
@@ -210,15 +215,14 @@ nav ul li:hover{
 nav ul{
   width: 90%;
     margin: 0 auto;
+    margin-top: 20vh;
     background-color: #ffffff;
     display: flex;
     padding: 10vw 0;
     border-radius: 5vmax 5vmax 0 0;
     flex-direction: column;
     align-items: center;
-    position: absolute;
-    top: 65vw;
-    left: 5vw;
+    
 }
 nav ul li{
   padding: 1.5rem 1rem;
@@ -374,7 +378,7 @@ footer ul li{
 .big-nav{
   display:block;
   position:fixed;
-  top:30vh;
+  top:0vh;
     right:10vw;
     background-color:transparent;
 }
@@ -393,8 +397,6 @@ footer ul li{
     display:none;
   }
   nav{
-        display:block !important;
-
     width:30vw;
     height:400px;
     font-size:3rem;
@@ -404,6 +406,7 @@ footer ul li{
   }
   nav ul{
     background-color: transparent;
+    margin-top: 0;
   }
   .lesson-header{
     flex-wrap:nowrap;
